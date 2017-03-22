@@ -1,85 +1,232 @@
 format-version: 1.2
 data-version: plana/releases/2017-02-16/plana.owl
+import: http://purl.obolibrary.org/obo/plana/imports/ro_import.owl
+import: http://purl.obolibrary.org/obo/plana/imports/uberon_import.owl
 ontology: TEMP
-owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/PLANA_0000040>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PLANA_0000112>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PLANA_0000129>))\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/PLANA_0000040> (Schmidtea mediterranea developmental stage)\n\nSubClassOf(<http://purl.obolibrary.org/obo/PLANA_0000040> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/PLANA_0000112> (Schmidtea mediterranea developmental term)\n\nSubClassOf(<http://purl.obolibrary.org/obo/PLANA_0000112> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/PLANA_0000129> (anatomical structure)\n\nSubClassOf(<http://purl.obolibrary.org/obo/PLANA_0000129> owl:Thing)\n\n\n)
+owl-axioms: Prefix(owl:=<http://www.w3.org/2002/07/owl#>)\nPrefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)\nPrefix(xml:=<http://www.w3.org/XML/1998/namespace>)\nPrefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)\nPrefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)\n\n\nOntology(\nDeclaration(Class(<http://purl.obolibrary.org/obo/PLANA_0000040>))\nDeclaration(Class(<http://purl.obolibrary.org/obo/PLANA_0000112>))\nDeclaration(AnnotationProperty(<http://www.geneontology.org/formats/oboInOwl#id>))\n\n\n############################\n#   Classes\n############################\n\n# Class: <http://purl.obolibrary.org/obo/PLANA_0000040> (<http://purl.obolibrary.org/obo/PLANA_0000040>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/PLANA_0000040> owl:Thing)\n\n# Class: <http://purl.obolibrary.org/obo/PLANA_0000112> (<http://purl.obolibrary.org/obo/PLANA_0000112>)\n\nSubClassOf(<http://purl.obolibrary.org/obo/PLANA_0000112> owl:Thing)\n\n\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/PLANA_0000010> \"PLANA:0000429\"^^xsd:string)\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Acellular_Anatomical_Structure> \"PLANA:0000426\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Adult> \"PLANA_TBA\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Anatomical_Entity_03092017> \"PLANA:0000400\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Anatomical_Point> \"PLANA:0000402\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Anatomical_Space> \"PLANA:0000403\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Anatomical_Surface> \"PLANA:0000408\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Definitive_Anatomical_Structure> \"PLANA:0000425\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Definitive_Organism_Subdivision> \"PLANA:0000417\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Developing_Anatomical_Structure> \"PLANA_0000209\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Embryonic_Organism_Subdivision> \"PLANA:0000423\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Head> \"PLANA:0000418\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Immaterial_Anatomical_Entity> \"PLANA:0000401\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Material_Anatomical_Entity> \"PLANA:0000424\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Multicellular_Anatomical_Structure> \"PLANA:0000427\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Neck> \"PLANA:0000419\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Non_Material_Anatomical_Boundary> \"PLANA:0000415\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Organism_Subdivision> \"PLANA:0000416\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Parapharyngeal_Region> \"PLANA:0000420\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Tail> \"PLANA:0000421\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#Tail_Stripe> \"PLANA:0000422\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#apical_epidermis_surface> \"PLANA:0000409\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#basal_epidermis_surface> \"PLANA:0000410\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#bursa> \"PLANA_0000201\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#cavity_of_pharynx> \"PLANA:0000404\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#definitive_pharynx> \"PLANA:0000016\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#embryonic_digestive_system_element> \"PLANA_0000210\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#genital_atrium> \"PLANA_0000202\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#gonopore> \"PLANA_0000203\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#juvenile> \"PLANA_TBA\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#lumen_gut_surface> \"PLANA:0000411\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#lumen_of_digestive_tract> \"PLANA:0000405\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#lumen_pharyngeal_epithelium_surface> \"PLANA:0000412\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#mouth_opening> \"PLANA:0000406\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#musculature_system> \"PLANA:0000428\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#organ> \"PLANA:0000431\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#outer_pharyngeal_epithelium_surface> \"PLANA:0000413\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#ovary> \"PLANA_0000204\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#oviduct> \"PLANA_0000205\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#parapharyngeal_pouch_surface> \"PLANA:0000414\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#penis_papilla> \"PLANA_0000206\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#primitive_ectoderm> \"PLANA_0000029\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#primitive_ectoderm_cell> \"PLANA_\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#reproductive_system> \"PLANA:0000126\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#reproductive_system_element> \"PLANA_0000200\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#reproductive_system_structure> \"PLANA TBA\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#sperm_duct> \"PLANA_0000207\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#temporary_embryonic_pharynx> \"PLANA_\")\nAnnotationAssertion(<http://www.geneontology.org/formats/oboInOwl#id> <http://purl.obolibrary.org/obo/TEMP.owl#testis> \"PLANA_0000208\")\n)
+
+[Term]
+id: Acellular_Anatomical_Structure
+name: acellular anatomical structure
+namespace: uberon
+def: "Anatomical structure that consists of cell parts and cell substances and together does not constitute a cell or a tissue." []
+xref: UBERON:0000476
+is_a: Definitive_Anatomical_Structure ! definitive anatomical structure
+
+[Term]
+id: Adult
+name: Adult
+namespace: Schmidtea_mediterranea_Developmental_Stages
+def: "A fully formed, mature organism. The asexually reproducing Schmidtea mediterranea biotype exists as a constitutive adult, undergoing successive cycles of fission and whole animal regeneration. The sexually reproducing Schmidtea mediterrane biotype exists as an obligate cross-fertilizing hermaphrodite." []
+is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+
+[Term]
+id: Anatomical_Entity_03092017
+name: anatomical entity
+namespace: Planarian_Anatomy
+def: "Biological entity that is either an individual member of a biological species or constitutes the structural organization of an individual member of a biological species." []
+xref: UBERON:0001062
+
+[Term]
+id: Anatomical_Point
+name: anatomical point
+namespace: Planarian_Anatomy
+def: "Non-material anatomical entity of zero dimension, which forms a boundary of an anatomical line or surface." []
+xref: UBERON:0006983
+is_a: Immaterial_Anatomical_Entity ! immaterial anatomical entity
+
+[Term]
+id: Anatomical_Space
+name: anatomical space
+namespace: Planarian_Anatomy
+def: "Non-material anatomical entity of three dimensions, that is generated by morphogenetic or other physiologic processes; is surrounded by one or more anatomical structures; contains one or more organism substances or anatomical structures." []
+xref: UBERON:0000464
+is_a: Immaterial_Anatomical_Entity ! immaterial anatomical entity
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+
+[Term]
+id: Anatomical_Surface
+name: anatomical surface
+namespace: Planarian_Anatomy
+def: "A two dimensional anatomical structure that is the boundary between an anatomical structure and an anatomical substance, an anatomical space or the organism's environment. Examples include the surface of your skin, the surface of the lining of your gut; the surface of the endothelium of you aorta that is in contact with blood.n" []
+xref: UBERON:0006984
+is_a: Immaterial_Anatomical_Entity ! immaterial anatomical entity
+
+[Term]
+id: Definitive_Anatomical_Structure
+name: definitive anatomical structure
+namespace: Planarian_Anatomy
+def: "Anatomical structure present in juvenile and adult planaria." []
+is_a: Material_Anatomical_Entity ! material anatomical entity
+
+[Term]
+id: Definitive_Organism_Subdivision
+name: definitive organism subdivision
+namespace: Planarian_Anatomy
+def: "Anatomical structure which is a subdivision of a whole adult organism, consisting of components of multiple anatomical systems." []
+is_a: Organism_Subdivision ! organism subdivision
+
+[Term]
+id: Developing_Anatomical_Structure
+name: developing anatomical structure
+def: "Anatomical structure that is present during embryonic development." []
+xref: UBERON:0005423
+is_a: Material_Anatomical_Entity ! material anatomical entity
+
+[Term]
+id: Embryonic_Organism_Subdivision
+name: embryonic organism subdivision
+namespace: Planarian_Anatomy
+def: "Anatomical structure which is a subdivision of a whole developing/ embryonic organism, consisting of components of multiple anatomical systems." []
+is_a: Organism_Subdivision ! organism subdivision
+
+[Term]
+id: GO:0005575
+is_a: PLANA:0000127 ! cell
+
+[Term]
+id: Head
+name: head
+namespace: Planarian_Anatomy
+def: "The head is the anterior-most division of the body [GO]." []
+xref: UBERON:0000033
+is_a: Definitive_Organism_Subdivision ! definitive organism subdivision
+
+[Term]
+id: Immaterial_Anatomical_Entity
+name: immaterial anatomical entity
+namespace: Planarian_Anatomy
+def: "Anatomical entity that has no mass." []
+xref: UBERON:0000466
+is_a: Anatomical_Entity_03092017 ! anatomical entity
+
+[Term]
+id: Material_Anatomical_Entity
+name: material anatomical entity
+namespace: Planarian_Anatomy
+def: "Anatomical entity that has mass." []
+xref: UBERON:0000465
+is_a: Anatomical_Entity_03092017 ! anatomical entity
+
+[Term]
+id: Multicellular_Anatomical_Structure
+name: multicellular anatomical structure
+namespace: Planarian_Anatomy
+def: "An anatomical structure that has more than one cell as a part." []
+xref: UBERON:0010000
+is_a: Definitive_Anatomical_Structure ! definitive anatomical structure
+
+[Term]
+id: Neck
+name: neck
+namespace: Planarian_Anatomy
+def: "Region of the animal just posterior to the photoreceptors and anterior to the pharynx." []
+xref: UBERON:0000974
+is_a: Definitive_Organism_Subdivision ! definitive organism subdivision
+
+[Term]
+id: Non_Material_Anatomical_Boundary
+name: non-material anatomical boundary
+namespace: Planarian_Anatomy
+def: "A non-material anatomical entity of two dimensions. Anatomical boundaries are contiguous structures." []
+xref: UBERON:0000015
+is_a: Immaterial_Anatomical_Entity ! immaterial anatomical entity
+
+[Term]
+id: Organism_Subdivision
+name: organism subdivision
+namespace: Planarian_Anatomy
+def: "Anatomical structure which is a subdivision of a whole organism, consisting of components of multiple anatomical systems, largely surrounded by a contiguous region of integument." []
+xref: UBERON:0000475
+is_a: Immaterial_Anatomical_Entity ! immaterial anatomical entity
 
 [Term]
 id: PLANA:0000001
 name: Stage 1
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D0-D2. Zygote and dispersed blastomere cleavage in a yolk syncytium." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000002
 name: Stage 2
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D2-D3. Sphere formation. A fraction of the blastomeres differentiate into temporary embryonic tissues that provide form and function to the embryo. Undifferentiated blastomeres remain in the embryonic wall." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000003
 name: Stage 3
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D2-D4. Dispersed blastomere cleavage in the embryonic wall of nascent spheres. Yolk ingestion into the gut cavity." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000004
 name: Stage 4
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D3-D5. Dispersed blastomere cleavage in the embryonic wall. Yolk ingestion into the gut cavity. Early embryonic gut formation." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000005
 name: Stage 5
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D5-D7. Organogenesis onset. Downregulation of early embryo enriched transcripts and birth of adult lineages in blastomere population. Early embryonic gut formation continues. Yolk ingestion into the gut cavity." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000006
 name: Stage 6
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D7-D9. Organogenesis and morphogenesis. Definitive organ formation. Temporary embryonic cell types degenerate. Embryo elongation." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000007
 name: Stage 7
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D9-D11. Organogenesis and organ maturation continues. Onset of gliding motility." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000008
 name: Stage 8
 namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "D13-D15. Organogenesis and organ maturation continues. Hatching." [PMID:28072387]
-is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+is_a: PLANA:0000116 ! embryo
 
 [Term]
 id: PLANA:0000009
 name: sigma neoblast
 namespace: Planarian_Anatomy
 def: "A heterogeneous subpopulation of neoblasts with enriched expression of SoxP-1 and SoxP-2 thought to contain both pluripotent stem cells and tissue-specific progenitors." [PMID:25017721]
-is_a: PLANA:0000010 ! neoblast
+is_a: PLANA:0000010 ! neoblast compartment
 is_a: PLANA:0000120 ! progenitor cell
-
-[Term]
-id: PLANA:0000010
-name: neoblast
-namespace: Planarian_Anatomy
-def: "A heterogeneous population of pluripotent, somatic adult stem cells and lineage primed progenitors that are required for maintenance and regeneration of all cell types in planaria, including the germline." [PLANA_REF:0000004, PMID:16311336, PMID:21566185, PMID:22899852]
-is_a: PLANA:0000037 ! definitive tissue
 is_a: PLANA:0000121 ! stem cell
 relationship: develops_from PLANA:0000032 ! blastomere
-relationship: existence_overlaps PLANA:0000005 ! Stage 5
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+
+[Term]
+id: PLANA:0000010
+name: neoblast compartment
+namespace: Planarian_Anatomy
+def: "A heterogeneous population of pluripotent, somatic adult stem cells and lineage primed progenitors that are required for maintenance and regeneration of all cell types in planaria, including the germline." [PLANA_REF:0000004, PMID:16311336, PMID:21566185, PMID:22899852]
+is_a: PLANA:0000114 ! anatomical system
+relationship: develops_from PLANA:0000032 ! blastomere
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+relationship: has_part PLANA:0000120 ! progenitor cell
+relationship: has_part PLANA:0000121 ! stem cell
 
 [Term]
 id: PLANA:0000011
@@ -112,24 +259,16 @@ id: PLANA:0000014
 name: zeta neoblast
 namespace: Planarian_Anatomy
 def: "An abundant neoblast subclass consisting of p53+, zfp1+ progenitors required for maintenance and regeneration of epidermal cell type(s)." [PMID:25017721]
-is_a: PLANA:0000010 ! neoblast
-is_a: PLANA:0000120 ! progenitor cell
-relationship: part_of PLANA:0000033 ! epidermal progenitor
-
-[Term]
-id: PLANA:0000016
-name: definitive pharynx
-namespace: Planarian_Anatomy
-def: "A plicate and protrusible organ that is the sole point of entry and exit for the Triclad gut. It contains epithelial, muscular, secretory and neuronal cell types." [OCLC:16809160]
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000050 ! digestive system element
-is_a: PLANA:0000118 ! organ
-relationship: develops_from PLANA:0000010 ! neoblast
-relationship: develops_from PLANA:0000110 ! definitive pharynx progenitor cell
+is_a: PLANA:0000010 ! neoblast compartment
+is_a: PLANA:0000033 ! epidermal progenitor
+relationship: develops_from PLANA:0000032 ! blastomere
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+relationship: part_of PLANA:0000033 ! epidermal progenitor
 
 [Term]
 id: PLANA:0000017
@@ -145,14 +284,14 @@ id: PLANA:0000018
 name: Category 4 cell
 namespace: Planarian_Anatomy
 def: "Post-mitotic, mesenchymally and epidermally located progenitors downstream of the Category 3 cells." [PMID:25017721, PMID:26457503]
-is_a: PLANA:0000120 ! progenitor cell
+is_a: PLANA:0000033 ! epidermal progenitor
 relationship: develops_from PLANA:0000035 ! Category 3 cell
-relationship: existence_overlaps PLANA:0000005 ! Stage 5
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
-relationship: part_of PLANA:0000033 ! epidermal progenitor
 relationship: part_of PLANA:0000034 ! definitive epidermis
 
 [Term]
@@ -173,13 +312,16 @@ id: PLANA:0000020
 name: protonephridia
 namespace: Planarian_Anatomy
 def: "Excretory organs consisting of flame cells, proximal tubules, and distal tubules connected to a mesenchymal collecting duct." [OCLC:16809160, PMID:21828097, PMID:26057828]
-is_a: PLANA:0000118 ! organ
-relationship: develops_from PLANA:0000010 ! neoblast
+is_a: organ
+is_a: PLANA:0000088 ! renal system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000011 ! protonephridial progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 
 [Term]
 id: PLANA:0000022
@@ -187,23 +329,7 @@ name: Category 5 cell
 namespace: Planarian_Anatomy
 def: "Post-mitotic, ciliated epidermal cells." [PMID:25017721]
 is_a: PLANA:0000119 ! terminally differentiated cell
-relationship: part_of PLANA:0000034 ! definitive epidermis
-
-[Term]
-id: PLANA:0000023
-name: temporary embryonic pharynx
-namespace: Planarian_Anatomy
-def: "An innervated, muscular pump that ingests yolk cells into the gut cavity. The temporary embryonic pharynx is an extraembryonic tissue that forms during Stage 2, functions during Stages 3-5, and degenerates during Stages 6-7." [PMID:28072387]
-is_a: PLANA:0000038 ! temporary embryonic tissue
-relationship: existence_ends_at_point PLANA:0000006 ! Stage 6
-relationship: existence_overlaps PLANA:0000003 ! Stage 3
-relationship: existence_overlaps PLANA:0000004 ! Stage 4
-relationship: existence_overlaps PLANA:0000005 ! Stage 5
-relationship: existence_overlaps PLANA:0000006 ! Stage 6
-relationship: existence_starts_at_point PLANA:0000003 ! Stage 3
-relationship: part_of PLANA:0000058 ! embryonic digestive system
-relationship: part_of PLANA:0000063 ! extraembryonic structure
-relationship: part_of PLANA:0000076 ! oral hemisphere
+relationship: part_of PLANA:0000054 ! dorsal epidermis
 
 [Term]
 id: PLANA:0000025
@@ -211,27 +337,31 @@ name: nervous system
 namespace: Planarian_Anatomy
 def: "The nervous system is an organ system containing predominantly neuron and glial cells. In bilaterally symmetrical organism, it is arranged in a network of tree-like structures connected to a central body. The main functions of the nervous system are to regulate and control body functions, and to receive sensory input, process this information, and generate behavior [CUMBO]." [UBERON:0001016]
 xref: UBERON:0001016
-is_a: PLANA:0000037 ! definitive tissue
 is_a: PLANA:0000114 ! anatomical system
-relationship: develops_from PLANA:0000010 ! neoblast
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000012 ! neural progenitor
-relationship: existence_ends_during_or_before PLANA:0000006 ! Stage 6
-relationship: existence_ends_during_or_before PLANA:0000007 ! Stage 7
-relationship: existence_ends_during_or_before PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 
 [Term]
 id: PLANA:0000026
 name: definitive gut
 namespace: Planarian_Anatomy
 def: "The planarian triclad gut contains a central anterior gut branch connected to two posterior gut branches arranged around the definitive pharynx. Secondary gut branches extend laterally from the primary gut branches, while tertiary gut branches extend from the secondary branches. Food and waste enter and exit the definitive gut through the defintive pharynx." [PMID:3490491]
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000118 ! organ
+is_a: organ
+is_a: PLANA:0000050 ! digestive system element
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000039 ! gamma neoblast
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 relationship: part_of PLANA:0000049 ! digestive system
 
 [Term]
@@ -239,26 +369,14 @@ id: PLANA:0000028
 name: Category 2 cell
 namespace: Planarian_Anatomy
 def: "Post-mitotic, mesenchymally located epidermal progenitors downstream of the zeta neoblasts." [PMID:18786419, PMID:20040488, PMID:22385657, PMID:25017721, PMID:26114597]
-is_a: PLANA:0000120 ! progenitor cell
+is_a: PLANA:0000033 ! epidermal progenitor
 relationship: develops_from PLANA:0000014 ! zeta neoblast
-relationship: existence_overlaps PLANA:0000005 ! Stage 5
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
-relationship: part_of PLANA:0000033 ! epidermal progenitor
-
-[Term]
-id: PLANA:0000029
-name: primitive ectoderm
-namespace: Planarian_Anatomy
-def: "A single cell layer of extraembryonic, post-mitotic ectodermal cells bounding the embryo. The primitive ectoderm forms during Stage 2 and is thought to degenerate as the definitive epidermis forms during Stages 5-7." [OCLC:20423827, OCLC:464776945, OCLC:82522822, PLANA_REF:0000001]
-is_a: PLANA:0000038 ! temporary embryonic tissue
-relationship: existence_ends_at_point PLANA:0000004 ! Stage 4
-relationship: existence_overlaps PLANA:0000003 ! Stage 3
-relationship: existence_overlaps PLANA:0000004 ! Stage 4
-relationship: existence_starts_at_point PLANA:0000003 ! Stage 3
-relationship: part_of PLANA:0000063 ! extraembryonic structure
 
 [Term]
 id: PLANA:0000030
@@ -266,8 +384,8 @@ name: muscle organ
 namespace: Planarian_Anatomy
 def: "Organ consisting of a tissue made up of various elongated cells that are specialized to contract and thus to produce movement and mechanical work[GO]." [UBERON:0001630]
 xref: UBERON:0001630
-is_a: PLANA:0000118 ! organ
-relationship: develops_from PLANA:0000010 ! neoblast
+is_a: organ
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000019 ! muscle progenitor
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
@@ -279,7 +397,7 @@ id: PLANA:0000031
 name: pigment cup cell
 namespace: Planarian_Anatomy
 def: "Non-neuronal, pigmented cells arrayed along the proximal side of the optic cup." [PMID:21852957, PMID:22884275]
-is_a: PLANA:0000119 ! terminally differentiated cell
+is_a: PLANA:0000075 ! optic cup
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
@@ -292,7 +410,6 @@ name: blastomere
 namespace: Planarian_Anatomy
 def: "Undifferentiated, zygote-derived cleavage progeny that give rise to temporary embryonic tissues during Stage 2, continue dividing asynchronously in the embryonic wall, and ultimately give rise to neoblasts and adult lineage progenitors beginning in Stage 5." [PMID:28072387]
 is_a: PLANA:0000109 ! embryonic tissue
-is_a: PLANA:0000127 ! cell
 relationship: develops_from PLANA:0000098 ! zygote
 relationship: existence_ends_at_point PLANA:0000005 ! Stage 5
 relationship: existence_overlaps PLANA:0000001 ! Stage 1
@@ -302,15 +419,15 @@ relationship: existence_overlaps PLANA:0000004 ! Stage 4
 relationship: existence_overlaps PLANA:0000005 ! Stage 5
 relationship: existence_starts_at_point PLANA:0000001 ! Stage 1
 relationship: part_of PLANA:0000060 ! embryonic wall
-relationship: part_of PLANA:0000109 ! embryonic tissue
 
 [Term]
 id: PLANA:0000033
 name: epidermal progenitor
 namespace: Planarian_Anatomy
 def: "Mitotically active zeta neoblasts and their post-mitotic descendants which undergo progressive differentiation and outward directed movement through the mesenchyme prior to incorporation into the epidermis, where terminal differentiation occurs." [PMID:18786419, PMID:20040488, PMID:22385657, PMID:25017721, PMID:26114597, PMID:26457503]
-is_a: PLANA:0000120 ! progenitor cell
-relationship: existence_overlaps PLANA:0000005 ! Stage 5
+is_a: PLANA:0000034 ! definitive epidermis
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
@@ -322,30 +439,32 @@ name: definitive epidermis
 namespace: Planarian_Anatomy
 def: "A single cell layer of post-mitotic epithelial cells containing ciliated and non-ciliated cell types." [OCLC:16809160]
 is_a: PLANA:0000114 ! anatomical system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000014 ! zeta neoblast
-relationship: develops_from PLANA:0000018 ! Category 4 cell
 relationship: develops_from PLANA:0000028 ! Category 2 cell
 relationship: develops_from PLANA:0000033 ! epidermal progenitor
 relationship: develops_from PLANA:0000035 ! Category 3 cell
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
-relationship: part_of PLANA:0000037 ! definitive tissue
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+relationship: has_part PLANA:0000018 ! Category 4 cell
+relationship: has_part PLANA:0000022 ! Category 5 cell
 
 [Term]
 id: PLANA:0000035
 name: Category 3 cell
 namespace: Planarian_Anatomy
 def: "Post-mitotic, mesenchymally located epidermal progenitors downstream of the Category 2 cells." [PMID:18786419, PMID:20040488, PMID:26114597, PMID:26457503]
-is_a: PLANA:0000120 ! progenitor cell
+is_a: PLANA:0000033 ! epidermal progenitor
 relationship: develops_from PLANA:0000028 ! Category 2 cell
-relationship: existence_overlaps PLANA:0000005 ! Stage 5
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
-relationship: part_of PLANA:0000033 ! epidermal progenitor
 
 [Term]
 id: PLANA:0000036
@@ -353,9 +472,9 @@ name: eye
 namespace: Planarian_Anatomy
 def: "An organ that detects light." [UBERON:0000970]
 xref: UBERON:0000970
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000118 ! organ
-relationship: develops_from PLANA:0000010 ! neoblast
+is_a: organ
+is_a: PLANA:0000124 ! visual system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000095 ! trail cell
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
@@ -368,37 +487,37 @@ name: definitive tissue
 namespace: Planarian_Anatomy
 def: "Adult tissues built during organogenesis that are present in juveniles at birth." [PMID:28072387, PMID:2888018]
 is_a: PLANA:0000113 ! tissue
-
-[Term]
-id: PLANA:0000038
-name: temporary embryonic tissue
-namespace: Planarian_Anatomy
-def: "Extra-embryonic tissues that provide form and function to planarian embryos, including the primitive ectoderm, temporary embryonic pharynx and primitive gut. These tissues differentiate from blastomeres during sphere formation, and are thought to degenerate as definitive organogenesis and morphogenesis ensue." [OCLC:20423827, OCLC:464776945, PMID:12888018, PMID:15599763, PMID:19197510]
-is_a: PLANA:0000113 ! tissue
-is_a: PLANA:0000117 ! embryonic structure
-relationship: develops_from PLANA:0000032 ! blastomere
+relationship: existence_overlaps Adult ! Adult
 
 [Term]
 id: PLANA:0000039
 name: gamma neoblast
 namespace: Planarian_Anatomy
 def: "An abundant neoblast subclass, exhibiting enriched expression of gata456a, hnf4, prox-1 and nkx2.2, implicated in maintenance and regeneration of the definitive gut." [PMID:25017721]
-is_a: PLANA:0000010 ! neoblast
+is_a: PLANA:0000010 ! neoblast compartment
 is_a: PLANA:0000120 ! progenitor cell
+relationship: develops_from PLANA:0000032 ! blastomere
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 
 [Term]
 id: PLANA:0000040
 name: Schmidtea mediterranea developmental stage
-namespace: Schmidtea_mediterranea_Developmental_Terms
+namespace: Schmidtea_mediterranea_Developmental_Stages
 def: "A stage of embryonic development defined by a unique gene expression signature, morphology and chronological time post-egg capsule deposition for hermaphrodites reared at 20˚C." [PMID:28072387]
+comment: does not exist in uberon
 
 [Term]
 id: PLANA:0000041
 name: aboral hemisphere
 namespace: Planarian_Anatomy
 def: "Stage 3-5 embryo hemisphere centered around the pole opposite the temporary embryonic pharynx." [PMID:28072387]
-is_a: PLANA:0000117 ! embryonic structure
-relationship: existence_ends_at_point PLANA:0000005 ! Stage 5
+is_a: Embryonic_Organism_Subdivision ! embryonic organism subdivision
+relationship: existence_ends_at_point PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000003 ! Stage 3
 relationship: existence_overlaps PLANA:0000004 ! Stage 4
 relationship: existence_overlaps PLANA:0000005 ! Stage 5
@@ -409,8 +528,11 @@ id: PLANA:0000042
 name: anterior primary gut branch
 namespace: Planarian_Anatomy
 def: "The single, central gut branch of the triclad gut anterior to the definitive pharynx." [PMID:3490491]
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000050 ! digestive system element
+is_a: PLANA:0000026 ! definitive gut
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000039 ! gamma neoblast
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
@@ -420,17 +542,20 @@ relationship: part_of PLANA:0000026 ! definitive gut
 id: PLANA:0000043
 name: basal lamina
 namespace: Planarian_Anatomy
-def: "A thin sheet of proteoglycans and glycoproteins, especially laminin, secreted by cells as an extracellular matrix." [GO:0005605 ]
-xref: GO:0005605 
-is_a: PLANA:0000129 ! anatomical structure
+def: "A thin sheet of proteoglycans and glycoproteins, especially laminin, secreted by cells as an extracellular matrix." [GO:0005605 ]
+xref: GO:0005605 
+is_a: Acellular_Anatomical_Structure ! acellular anatomical structure
 
 [Term]
 id: PLANA:0000044
 name: cephalic ganglia
 namespace: Planarian_Anatomy
 def: "The planarian brain, consisting of two bilaterally symmetric lobes occupying a ventral position in the head." []
-is_a: PLANA:0000118 ! organ
-relationship: existence_overlaps PLANA:0000006 ! Stage 6
+is_a: PLANA:0000103 ! central nervous system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000012 ! neural progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
@@ -442,26 +567,36 @@ id: PLANA:0000045
 name: circular muscle fiber
 namespace: Planarian_Anatomy
 def: "Body wall muscle fibers arrayed around the dorsoventral axis. Upon regeneration, these are thought to be produced de novo in the blastema." [PLANA_REF:0000005, PMID:26904543]
-is_a: PLANA:0000037 ! definitive tissue
-relationship: part_of PLANA:0000073 ! musculature of body wall
+is_a: musculature_system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: part_of PLANA:0000030 ! muscle organ
 
 [Term]
 id: PLANA:0000046
 name: clonogenic neoblast
 namespace: Planarian_Anatomy
 def: "Pluripotent piwi-1+ stem cells that self-renew, form expanding colonies and produce differentiating daughters that contribute to multiple organ systems. cNeoblasts are predicted to be broadly distributed across the anteroposterior axis of the adult worm." [PMID:21566185]
+is_a: PLANA:0000010 ! neoblast compartment
 is_a: PLANA:0000121 ! stem cell
+relationship: develops_from PLANA:0000032 ! blastomere
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 
 [Term]
 id: PLANA:0000047
 name: collecting duct
 namespace: Planarian_Anatomy
 def: "Non-ciliated tubules associated with the distal tubules, which cross the basement membrane and terminate in the dorsal epidermis." [PMID:26057828]
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000020 ! protonephridia
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: part_of PLANA:0000020 ! protonephridia
 relationship: part_of PLANA:0000088 ! renal system
 
@@ -470,8 +605,11 @@ id: PLANA:0000048
 name: diagonal muscle fiber
 namespace: Planarian_Anatomy
 def: "Body wall muscle fibers arrayed diagonally along the anteroposterior axis." [PMID:26904543]
-is_a: PLANA:0000037 ! definitive tissue
-relationship: part_of PLANA:0000073 ! musculature of body wall
+is_a: musculature_system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: part_of PLANA:0000030 ! muscle organ
 
 [Term]
 id: PLANA:0000049
@@ -480,10 +618,12 @@ namespace: Planarian_Anatomy
 def: "Anatomical system that has as its parts the organs devoted to the ingestion, digestion, and assimilation of food and the discharge of residual wastes." [UBERON:0001007]
 xref: UBERON:0001007
 is_a: PLANA:0000114 ! anatomical system
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_during_or_after PLANA:0000005 ! Stage 5
 
 [Term]
 id: PLANA:0000050
@@ -491,7 +631,12 @@ name: digestive system element
 namespace: Planarian_Anatomy
 def: "Any of the organs or elements that are part of the digestive system. Examples: tongue, esophagus, spleen, crop, lunge feeding organ, tooth elements." [UBERON:0013765]
 xref: UBERON:0013765
-is_a: PLANA:0000129 ! anatomical structure
+is_a: PLANA:0000049 ! digestive system
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: part_of PLANA:0000049 ! digestive system
 
 [Term]
@@ -513,11 +658,11 @@ id: PLANA:0000053
 name: distal tubule
 namespace: Planarian_Anatomy
 def: "Sinusoidal, non-ciliated tubules connected to proximal tubules within the parenchyma. Tubules are formed via intercellular junctions between two epithelial cells." [PMID:21828097]
-is_a: PLANA:0000037 ! definitive tissue
-relationship: existence_overlaps PLANA:0000006 ! Stage 6
-relationship: existence_overlaps PLANA:0000007 ! Stage 7
-relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+is_a: PLANA:0000020 ! protonephridia
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000011 ! protonephridial progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: part_of PLANA:0000020 ! protonephridia
 relationship: part_of PLANA:0000088 ! renal system
 
@@ -526,11 +671,19 @@ id: PLANA:0000054
 name: dorsal epidermis
 namespace: Planarian_Anatomy
 def: "Single cell layer of dorsal, post-mitotic, epithelial cells containing the dorsal stripe." [OCLC:16809160]
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000034 ! definitive epidermis
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000014 ! zeta neoblast
+relationship: develops_from PLANA:0000028 ! Category 2 cell
+relationship: develops_from PLANA:0000035 ! Category 3 cell
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+relationship: has_part PLANA:0000018 ! Category 4 cell
+relationship: has_part PLANA:0000022 ! Category 5 cell
 relationship: part_of PLANA:0000034 ! definitive epidermis
 
 [Term]
@@ -538,7 +691,7 @@ id: PLANA:0000055
 name: dorsal stripe
 namespace: Planarian_Anatomy
 def: "Dorsal ciliated epithelial cells along the midline." []
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000054 ! dorsal epidermis
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
@@ -550,7 +703,7 @@ id: PLANA:0000056
 name: ectolecithal embryo
 namespace: Schmidtea_mediterranea_Developmental_Terms
 def: "Turbellarian (freshwater flatworm) embryos that undergo a modified form of cleavage due to separation of oocyte and yolk. Yolk is not contained within oocytes, and is produced by somatic vitellogenic gland cells." [PLANA_REF:0000002, PMID:22074376, PMID:27149082]
-is_a: PLANA:0000129 ! anatomical structure
+is_a: PLANA:0000112 ! Schmidtea mediterranea developmental term
 
 [Term]
 id: PLANA:0000057
@@ -564,21 +717,15 @@ is_a: PLANA:0000112 ! Schmidtea mediterranea developmental term
 id: PLANA:0000058
 name: embryonic digestive system
 namespace: Planarian_Anatomy
-def: "A cryptic digestive system in Stage 3-6 embryos comprised of temporary embryonic cell types and organs, including the temporary embryonic pharynx and primitive gut cells. Embryonic gut cells, likely produced from blastomeres, form a phagocytic tissue layer surrounding the inner gut cavity during Stages 4-6. It is not known whether the embryonic gut is temporary embryonic tissue or a definitive tissue." []
-is_a: PLANA:0000114 ! anatomical system
-is_a: PLANA:0000117 ! embryonic structure
-relationship: existence_ends_at_point PLANA:0000005 ! Stage 5
-relationship: existence_overlaps PLANA:0000005 ! Stage 5
-relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
-relationship: part_of PLANA:0000049 ! digestive system
+def: "A cryptic digestive system in Stage 3-6 embryos comprised of temporary embryonic cell types and organs, including the temporary embryonic pharynx and primitive gut cells. Embryonic gut cells, likely produced from blastomeres, form a phagocytic tissue layer surrounding the inner gut cavity during Stages 4-6. It is not known whether the embryonic gut is temporary embryonic tissue or a definitive tissue. For convenience, the embryonic gut is currently designated as an extraembryonic structure because cell type specific markers for the embryonic gut do not stain the definitive gut in hatchlings or adult animals." []
+is_a: PLANA:0000063 ! extraembryonic structure
 
 [Term]
 id: PLANA:0000059
 name: embryonic gut cell
 namespace: Planarian_Anatomy
 def: "Dispersed, phagocytic gut cells that appear during Stage 4 and ultimately generate a honeycomb-like lattice surrounding the central gut cavity in Stage 5 embryos. Early embryonic gut cell specific transcripts are expressed from Stage 4-6, and are downregulated during Stage 7." [PMID:28072387]
-is_a: PLANA:0000109 ! embryonic tissue
-is_a: PLANA:0000123 ! embryonic cell
+is_a: embryonic_digestive_system_element ! embryonic digestive system element
 relationship: existence_ends_at_point PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000004 ! Stage 4
 relationship: existence_overlaps PLANA:0000005 ! Stage 5
@@ -592,32 +739,37 @@ id: PLANA:0000060
 name: embryonic wall
 namespace: Planarian_Anatomy
 def: "The parenchymal space between the gut cavity and the primitive ectoderm containing undifferentiated blastomeres in Stage 3-5 embryos." [OCLC:16809160, PMID:12888018]
-is_a: PLANA:0000117 ! embryonic structure
+is_a: Embryonic_Organism_Subdivision ! embryonic organism subdivision
 relationship: existence_ends_at_point PLANA:0000005 ! Stage 5
 relationship: existence_overlaps PLANA:0000003 ! Stage 3
 relationship: existence_overlaps PLANA:0000004 ! Stage 4
 relationship: existence_overlaps PLANA:0000005 ! Stage 5
 relationship: existence_starts_at_point PLANA:0000003 ! Stage 3
+relationship: has_part PLANA:0000032 ! blastomere
+relationship: has_part PLANA:0000092 ! syncytial yolk
 
 [Term]
 id: PLANA:0000061
 name: enteric muscle
 namespace: Planarian_Anatomy
 def: "Visceral muscle surrounding the definitive gut." []
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000050 ! digestive system element
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
-relationship: part_of PLANA:0000073 ! musculature of body wall
 
 [Term]
 id: PLANA:0000062
 name: esophagus
 namespace: Planarian_Anatomy
 def: "Attachment between the triclad gut and the proximal end of the definitive pharynx." []
-is_a: PLANA:0000037 ! definitive tissue
 is_a: PLANA:0000050 ! digestive system element
-relationship: part_of PLANA:0000026 ! definitive gut
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 
 [Term]
 id: PLANA:0000063
@@ -625,14 +777,18 @@ name: extraembryonic structure
 namespace: Planarian_Anatomy
 def: "A multicellular anatomical structure that is associated with an embryo and derived from the zygote from which it develops, but which does not contribute to the embryo proper or to structures that are part of the same organism after embryogenesis." [UBERON:0000478]
 xref: UBERON:0000478
-is_a: PLANA:0000117 ! embryonic structure
+is_a: Developing_Anatomical_Structure ! developing anatomical structure
 
 [Term]
 id: PLANA:0000064
 name: flame bulb
 namespace: Planarian_Anatomy
 def: "Terminal structure of protonephridia unit; consists of flame cells." []
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000020 ! protonephridia
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000011 ! protonephridial progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: part_of PLANA:0000020 ! protonephridia
 relationship: part_of PLANA:0000088 ! renal system
 
@@ -641,6 +797,7 @@ id: PLANA:0000065
 name: flame cell
 namespace: Planarian_Anatomy
 def: "Terminal structure of the protonephridia unit, capping the proximal tubules. Flame cells are defined by the ‘filtration weir’, which consists of closely apposed strands of cytoplasm surrounding a central cilia bundle, and by numerous microvilli between weir and cilia. Positive for acetyated tubulin." [OCLC:16809160, PMID:21828097, PMID:26057828]
+is_a: PLANA:0000064 ! flame bulb
 is_a: PLANA:0000119 ! terminally differentiated cell
 relationship: part_of PLANA:0000020 ! protonephridia
 relationship: part_of PLANA:0000088 ! renal system
@@ -650,89 +807,83 @@ id: PLANA:0000066
 name: gastrodermis
 namespace: Planarian_Anatomy
 def: "The single cell layer columnar epithelial lining of the intestine. The gastrodermis is surrounded by a basal lamina and enteric muscle." [PMID:3490491]
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000050 ! digestive system element
+is_a: PLANA:0000026 ! definitive gut
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000039 ! gamma neoblast
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: has_part PLANA:0000067 ! goblet cell
+relationship: has_part PLANA:0000070 ! intestinal phagocyte
 relationship: part_of PLANA:0000026 ! definitive gut
 relationship: part_of PLANA:0000042 ! anterior primary gut branch
 relationship: part_of PLANA:0000084 ! posterior primary gut branch
+relationship: part_of PLANA:0000089 ! secondary gut branch
+relationship: part_of PLANA:0000093 ! tertiary gut branch
 
 [Term]
 id: PLANA:0000067
 name: goblet cell
 namespace: Planarian_Anatomy
 def: "Secretory cells that release digestive enzymes into the lumen of the intestine." [PMID:3490491]
-is_a: PLANA:0000050 ! digestive system element
+is_a: PLANA:0000066 ! gastrodermis
 is_a: PLANA:0000119 ! terminally differentiated cell
 relationship: part_of PLANA:0000026 ! definitive gut
-relationship: part_of PLANA:0000042 ! anterior primary gut branch
-relationship: part_of PLANA:0000066 ! gastrodermis
-relationship: part_of PLANA:0000084 ! posterior primary gut branch
 
 [Term]
 id: PLANA:0000068
 name: gut cavity
 namespace: Planarian_Anatomy
 def: "lumen of digestive tract" []
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000050 ! digestive system element
+is_a: embryonic_digestive_system_element ! embryonic digestive system element
 relationship: existence_overlaps PLANA:0000003 ! Stage 3
 relationship: existence_overlaps PLANA:0000004 ! Stage 4
 relationship: existence_overlaps PLANA:0000005 ! Stage 5
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
-relationship: existence_overlaps PLANA:0000007 ! Stage 7
-relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000003 ! Stage 3
-relationship: part_of PLANA:0000058 ! embryonic digestive system
 
 [Term]
 id: PLANA:0000069
 name: inner longitudinal muscle fiber
 namespace: Planarian_Anatomy
 def: "Inner most body wall muscle fibers arrayed along the anteroposterior axis. These fibers are thicker than the outer longitudinal muscle fibers. The pattern of these muscles differs along the dorsoventral axis, with the dorsal arrangement converging at the central zone of the anterior pole. The ventral arrangement is more parallel or may diverge slightly as it approaches the ventral pole." [PLANA_REF:0000003, PMID:26904543]
-is_a: PLANA:0000037 ! definitive tissue
-relationship: part_of PLANA:0000071 ! longitudinal muscle fiber
-relationship: part_of PLANA:0000073 ! musculature of body wall
+is_a: PLANA:0000030 ! muscle organ
+is_a: PLANA:0000071 ! longitudinal muscle fiber
+relationship: existence_overlaps Adult ! Adult
 
 [Term]
 id: PLANA:0000070
 name: intestinal phagocyte
 namespace: Planarian_Anatomy
 def: "Absorptive digestive cells that engulf food particles for intracellular digestion." [PMID:3490491]
-is_a: PLANA:0000050 ! digestive system element
+is_a: PLANA:0000066 ! gastrodermis
 is_a: PLANA:0000119 ! terminally differentiated cell
 relationship: part_of PLANA:0000026 ! definitive gut
-relationship: part_of PLANA:0000042 ! anterior primary gut branch
-relationship: part_of PLANA:0000066 ! gastrodermis
-relationship: part_of PLANA:0000084 ! posterior primary gut branch
 
 [Term]
 id: PLANA:0000071
 name: longitudinal muscle fiber
 namespace: Planarian_Anatomy
 def: "Body wall muscle fibers arrayed along the anteroposterior axis. Upon regeneration, these muscles are thought to be established from truncated pre-existing fibers." [PLANA_REF:0000005, PMID:26904543]
-is_a: PLANA:0000037 ! definitive tissue
-relationship: part_of PLANA:0000073 ! musculature of body wall
+is_a: musculature_system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: part_of PLANA:0000030 ! muscle organ
 
 [Term]
 id: PLANA:0000072
 name: mouth
 namespace: Planarian_Anatomy
 def: "The sole point of entry and exit for the Triclad planarian flatworm gut. The mouth is connected to the pharyngeal pouch to allow for exit and re-entry of the definitive pharynx on the ventral side of the animal. The mouth contains several cell types, including epithelial cells, muscle, and secretory cells." [OCLC:16809160]
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000050 ! digestive system element
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
+relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: has_part PLANA:0000100 ! epithelial cell
+relationship: has_part PLANA:0000105 ! secretory cell
 relationship: part_of PLANA:0000049 ! digestive system
-
-[Term]
-id: PLANA:0000073
-name: musculature of body wall
-namespace: Planarian_Anatomy
-def: "Any collection of muscles that is part of a body wall." [PMID:26904543, UBERON:0004462]
-xref: UBERON:0004462
-is_a: PLANA:0000030 ! muscle organ
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000114 ! anatomical system
 
 [Term]
 id: PLANA:0000074
@@ -747,7 +898,9 @@ id: PLANA:0000075
 name: optic cup
 namespace: Planarian_Anatomy
 def: "A portion of the eye containing pigment cells and dendritic projections from photoreceptor neurons." [PMID:21852957, PMID:22884275]
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000036 ! eye
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
@@ -759,8 +912,8 @@ id: PLANA:0000076
 name: oral hemisphere
 namespace: Planarian_Anatomy
 def: "Stage 3-5 embryo hemisphere centered around the temporary embryonic pharynx." [PMID:28072387]
-is_a: PLANA:0000117 ! embryonic structure
-relationship: existence_ends_at_point PLANA:0000005 ! Stage 5
+is_a: Embryonic_Organism_Subdivision ! embryonic organism subdivision
+relationship: existence_ends_at_point PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000003 ! Stage 3
 relationship: existence_overlaps PLANA:0000004 ! Stage 4
 relationship: existence_overlaps PLANA:0000005 ! Stage 5
@@ -784,16 +937,19 @@ id: PLANA:0000078
 name: outer longitudinal muscle fiber
 namespace: Planarian_Anatomy
 def: "Outer most body wall muscle fibers arrayed along the anteroposterior axis. These fibers are thinner than the inner longitudinal muscle fibers." [PLANA_REF:0000003, PMID:26904543]
-is_a: PLANA:0000037 ! definitive tissue
-relationship: part_of PLANA:0000071 ! longitudinal muscle fiber
-relationship: part_of PLANA:0000073 ! musculature of body wall
+is_a: PLANA:0000030 ! muscle organ
+is_a: PLANA:0000071 ! longitudinal muscle fiber
+relationship: existence_overlaps Adult ! Adult
 
 [Term]
 id: PLANA:0000079
 name: parenchymal musculature
 namespace: Planarian_Anatomy
 def: "Dorsal-ventral muscle fibers present through the mesenchyme." [OCLC:16809160]
-is_a: PLANA:0000037 ! definitive tissue
+is_a: musculature_system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: part_of PLANA:0000030 ! muscle organ
 
 [Term]
@@ -802,12 +958,15 @@ name: peripheral nervous system
 namespace: Planarian_Anatomy
 def: "A major division of the nervous system that contains nerves which connect the central nervous system (CNS) with sensory organs, other organs, muscles, blood vessels and glands." [UBERON:0000010]
 xref: UBERON:0000010
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000114 ! anatomical system
+is_a: PLANA:0000025 ! nervous system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000012 ! neural progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 relationship: part_of PLANA:0000025 ! nervous system
 
 [Term]
@@ -815,18 +974,20 @@ id: PLANA:0000081
 name: pharyngeal pouch
 namespace: Planarian_Anatomy
 def: "An epithelial structure housing the definitive pharynx, connected to the esophagus and mouth." [OCLC:16809160]
-is_a: PLANA:0000037 ! definitive tissue
 is_a: PLANA:0000050 ! digestive system element
-relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000008 ! Stage 8
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 
 [Term]
 id: PLANA:0000084
 name: posterior primary gut branch
 namespace: Planarian_Anatomy
 def: "The primary gut branches of the triclad gut lateral and posterior to the pharynx and pharyngeal pouch." [PMID:3490491]
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000050 ! digestive system element
+is_a: PLANA:0000026 ! definitive gut
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000039 ! gamma neoblast
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
@@ -837,14 +998,13 @@ id: PLANA:0000085
 name: primitive gut cell
 namespace: Planarian_Anatomy
 def: "Four large phagocytic cells associated with the temporary embryonic pharynx." [PMID:28072387]
-is_a: PLANA:0000123 ! embryonic cell
+is_a: embryonic_digestive_system_element ! embryonic digestive system element
 relationship: develops_from PLANA:0000032 ! blastomere
 relationship: existence_ends_at_point PLANA:0000004 ! Stage 4
 relationship: existence_overlaps PLANA:0000003 ! Stage 3
 relationship: existence_overlaps PLANA:0000004 ! Stage 4
 relationship: existence_starts_at_point PLANA:0000003 ! Stage 3
 relationship: part_of PLANA:0000058 ! embryonic digestive system
-relationship: part_of PLANA:0000063 ! extraembryonic structure
 relationship: part_of PLANA:0000076 ! oral hemisphere
 
 [Term]
@@ -859,7 +1019,11 @@ id: PLANA:0000087
 name: proximal tubule
 namespace: Planarian_Anatomy
 def: "Ciliated epithelial cells form tubules, generating coiled, branching units terminating in flame bulbs. Tubules are formed via intercellular junctions between two epithelial cells. Proximal tubules are connected to non-ciliated distal tubules within the parenchyma." [PMID:21828097]
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000020 ! protonephridia
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000011 ! protonephridial progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
@@ -873,27 +1037,29 @@ name: renal system
 namespace: Planarian_Anatomy
 def: "The renal system in an anatomical system that maintains fluid balance and contributes to electrolyte balance, acid/base balance, and disposal of nitrogenous waste products." [UBERON:0001008]
 xref: UBERON:0001008
-is_a: PLANA:0000037 ! definitive tissue
 is_a: PLANA:0000114 ! anatomical system
-relationship: develops_from PLANA:0000010 ! neoblast
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000011 ! protonephridial progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 
 [Term]
 id: PLANA:0000089
 name: secondary gut branch
 namespace: Planarian_Anatomy
 def: "Gut branches, originating from and connected to the primary gut branches, that extend laterally towards the body edge." [PMID:3490491]
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000050 ! digestive system element
+is_a: PLANA:0000026 ! definitive gut
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000039 ! gamma neoblast
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000008 ! Stage 8
+relationship: existence_starts_during_or_after PLANA:0000007 ! Stage 7
 relationship: part_of PLANA:0000026 ! definitive gut
-relationship: part_of PLANA:0000042 ! anterior primary gut branch
-relationship: part_of PLANA:0000084 ! posterior primary gut branch
 
 [Term]
 id: PLANA:0000090
@@ -915,7 +1081,7 @@ id: PLANA:0000092
 name: syncytial yolk
 namespace: Schmidtea_mediterranea_Developmental_Terms
 def: "Yolk surrounding blastomeres undergoing dispersed cleavage during Stages 1 and 2." [PMID:15599763]
-is_a: PLANA:0000129 ! anatomical structure
+is_a: Developing_Anatomical_Structure ! developing anatomical structure
 relationship: existence_ends_at_point PLANA:0000002 ! Stage 2
 relationship: existence_overlaps PLANA:0000001 ! Stage 1
 relationship: existence_overlaps PLANA:0000002 ! Stage 2
@@ -926,11 +1092,12 @@ id: PLANA:0000093
 name: tertiary gut branch
 namespace: Planarian_Anatomy
 def: "Gut branches originating from and connected to the secondary gut branches." [PMID:3490491]
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000050 ! digestive system element
+is_a: PLANA:0000026 ! definitive gut
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000039 ! gamma neoblast
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: part_of PLANA:0000026 ! definitive gut
-relationship: part_of PLANA:0000042 ! anterior primary gut branch
-relationship: part_of PLANA:0000084 ! posterior primary gut branch
 
 [Term]
 id: PLANA:0000094
@@ -963,12 +1130,19 @@ id: PLANA:0000096
 name: ventral epidermis
 namespace: Planarian_Anatomy
 def: "Single cell layer of ventral, post-mitotic, heavily ciliated epithelial cells" []
-is_a: PLANA:0000037 ! definitive tissue
+is_a: PLANA:0000034 ! definitive epidermis
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000014 ! zeta neoblast
+relationship: develops_from PLANA:0000028 ! Category 2 cell
+relationship: develops_from PLANA:0000035 ! Category 3 cell
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
-relationship: part_of PLANA:0000034 ! definitive epidermis
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+relationship: has_part PLANA:0000018 ! Category 4 cell
+relationship: has_part PLANA:0000022 ! Category 5 cell
 
 [Term]
 id: PLANA:0000097
@@ -976,8 +1150,11 @@ name: ventral nerve cord
 namespace: Planarian_Anatomy
 def: "The pair of closely united ventral longitudinal nerves with their segmental ganglia that is characteristic of many elongate invertebrates (as earthworms)[BTO]. A large process bundle that runs along the vental mid-line extending from the ventral region of the nerve ring[WB]. The ventral cord is one of the distinguishing traits of the central nervous system of all arthropods (such as insects, crustaceans and arachnids) as well as many other invertebrates, such as the annelid worms[GO]." [UBERON:0000934]
 xref: UBERON:0000934
-is_a: PLANA:0000037 ! definitive tissue
-relationship: existence_overlaps PLANA:0000006 ! Stage 6
+is_a: PLANA:0000103 ! central nervous system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000012 ! neural progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
@@ -1006,7 +1183,6 @@ relationship: existence_ends_during_or_before PLANA:0000006 ! Stage 6
 relationship: existence_ends_during_or_before PLANA:0000007 ! Stage 7
 relationship: existence_ends_during_or_before PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
-relationship: part_of PLANA:0000016 ! definitive pharynx
 relationship: part_of PLANA:0000025 ! nervous system
 
 [Term]
@@ -1016,7 +1192,6 @@ namespace: Planarian_Anatomy
 def: "A cell that is usually found in a two-dimensional sheet with a free surface. The cell has a cytoskeleton that allows for tight cell to cell contact and for cell polarity where apical part is directed towards the lumen and the basal part to the basal lamina." [CL:0000066]
 xref: CL:0000066
 is_a: PLANA:0000119 ! terminally differentiated cell
-relationship: part_of PLANA:0000016 ! definitive pharynx
 relationship: part_of PLANA:0000072 ! mouth
 
 [Term]
@@ -1039,9 +1214,6 @@ namespace: Planarian_Anatomy
 def: "A muscle that acts on the pharynx." [UBERON:0000933]
 xref: UBERON:0000933
 is_a: PLANA:0000037 ! definitive tissue
-relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000008 ! Stage 8
-relationship: part_of PLANA:0000016 ! definitive pharynx
 relationship: part_of PLANA:0000049 ! digestive system
 
 [Term]
@@ -1050,11 +1222,15 @@ name: central nervous system
 namespace: Planarian_Anatomy
 def: "The central nervous system is the core nervous system that serves an integrating and coordinating function. In vertebrates it consists of the neural tube derivatives: the brain and spinal cord. In invertebrates it includes central ganglia plus nerve cord." [UBERON:0001017]
 xref: UBERON:0001017
-is_a: PLANA:0000114 ! anatomical system
+is_a: PLANA:0000025 ! nervous system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000012 ! neural progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
-relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 relationship: part_of PLANA:0000025 ! nervous system
 
 [Term]
@@ -1062,7 +1238,7 @@ id: PLANA:0000104
 name: rhabdite
 namespace: Planarian_Anatomy
 def: "Straight or curved rod-like structures within the epidermal cells, oriented with long axis at right angles to the epidermal surface, that are discharged into mucous secretions." []
-is_a: PLANA:0000037 ! definitive tissue
+is_a: epithelial_cell_component
 relationship: existence_overlaps PLANA:0000006 ! Stage 6
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
@@ -1076,7 +1252,6 @@ namespace: Planarian_Anatomy
 def: "A cell that specializes in controlled release of one or more substances." [CL:0000151]
 xref: CL:0000151
 is_a: PLANA:0000119 ! terminally differentiated cell
-relationship: part_of PLANA:0000016 ! definitive pharynx
 relationship: part_of PLANA:0000072 ! mouth
 
 [Term]
@@ -1085,8 +1260,7 @@ name: ciliated epithelial cell
 namespace: Planarian_Anatomy
 def: "An epithelial cell that has a cillia." [CL:0000067]
 xref: CL:0000067
-is_a: PLANA:0000119 ! terminally differentiated cell
-relationship: part_of PLANA:0000029 ! primitive ectoderm
+is_a: PLANA:0000100 ! epithelial cell
 relationship: part_of PLANA:0000034 ! definitive epidermis
 relationship: part_of PLANA:0000054 ! dorsal epidermis
 relationship: part_of PLANA:0000055 ! dorsal stripe
@@ -1114,13 +1288,17 @@ relationship: part_of PLANA:0000060 ! embryonic wall
 id: PLANA:0000108
 name: eye photoreceptor cell
 namespace: Planarian_Anatomy
-def: "A cell specialized to detect and transduce light. " [CL:0000287]
+def: "A cell specialized to detect and transduce light. " [CL:0000287]
 xref: CL:0000287
+is_a: PLANA:0000036 ! eye
 is_a: PLANA:0000119 ! terminally differentiated cell
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000095 ! trail cell
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
 relationship: existence_overlaps PLANA:0000007 ! Stage 7
 relationship: existence_overlaps PLANA:0000008 ! Stage 8
 relationship: existence_starts_at_point PLANA:0000007 ! Stage 7
-relationship: part_of PLANA:0000124 ! visual system
 
 [Term]
 id: PLANA:0000109
@@ -1128,7 +1306,6 @@ name: embryonic tissue
 namespace: Planarian_Anatomy
 def: "A portion of tissue that is part of an embryo." [UBERON:0005291]
 xref: UBERON:0005291
-is_a: PLANA:0000113 ! tissue
 is_a: PLANA:0000117 ! embryonic structure
 
 [Term]
@@ -1148,6 +1325,7 @@ relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 id: PLANA:0000112
 name: Schmidtea mediterranea developmental term
 namespace: Schmidtea_mediterranea_Developmental_Terms
+namespace: TBA
 def: "A term  used to describe a developmental process during Schmidtea mediterranea embryogenesis." [PLANA_REF:0000000]
 
 [Term]
@@ -1156,7 +1334,7 @@ name: tissue
 namespace: Planarian_Anatomy
 def: "Multicellular anatomical structure that consists of many cells of one or a few types, arranged in an extracellular matrix such that their long-range organisation is at least partly a repetition of their short-range organisation." [PLANA_REF:0000000, UBERON:0000479]
 xref: UBERON:0000479
-is_a: PLANA:0000129 ! anatomical structure
+is_a: Multicellular_Anatomical_Structure ! multicellular anatomical structure
 
 [Term]
 id: PLANA:0000114
@@ -1164,31 +1342,23 @@ name: anatomical system
 namespace: Planarian_Anatomy
 def: "Multicellular, connected anatomical structure that has multiple organs as parts and whose parts work together to achieve some shared function." [UBERON:0000467]
 xref: UBERON:0000467
-is_a: PLANA:0000129 ! anatomical structure
+is_a: Multicellular_Anatomical_Structure ! multicellular anatomical structure
 
 [Term]
 id: PLANA:0000116
 name: embryo
 namespace: Planarian_Anatomy
-def: "Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant. " [UBERON:0000922]
+def: "Anatomical entity that comprises the organism in the early stages of growth and differentiation that are characterized by cleavage, the laying down of fundamental tissues, and the formation of primitive organs and organ systems. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant. " [UBERON:0000922]
 xref: UBERON:0000922
-is_a: PLANA:0000117 ! embryonic structure
+is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
 
 [Term]
 id: PLANA:0000117
 name: embryonic structure
 namespace: Planarian_Anatomy
-def: "Anatomical structure that is part of an embryo. " [UBERON_0002050 ]
-xref: UBERON_0002050 
-is_a: PLANA:0000129 ! anatomical structure
-
-[Term]
-id: PLANA:0000118
-name: organ
-namespace: Planarian_Anatomy
-def: "Anatomical structure that performs a specific function or group of functions." [UBERON:0000062]
-xref: UBERON:0000062
-is_a: PLANA:0000129 ! anatomical structure
+def: "Anatomical structure that is part of an embryo. " [UBERON_0002050 ]
+xref: UBERON_0002050 
+is_a: Developing_Anatomical_Structure ! developing anatomical structure
 
 [Term]
 id: PLANA:0000119
@@ -1203,6 +1373,8 @@ name: progenitor cell
 namespace: Planarian_Anatomy
 def: "A cycling neoblast and/or post-mitotic cell that is primed or irreversibly committed to a tissue-specific differentation program" []
 is_a: PLANA:0000128 ! precursor cell
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
 
 [Term]
 id: PLANA:0000121
@@ -1219,6 +1391,7 @@ namespace: Planarian_Anatomy
 def: "A mature sexual reproductive cell having a single set of unpaired chromosomes." [CL:0000300]
 xref: CL:0000300
 is_a: PLANA:0000127 ! cell
+is_a: reproductive_system_element ! reproductive system element
 
 [Term]
 id: PLANA:0000123
@@ -1226,8 +1399,7 @@ name: embryonic cell
 namespace: Planarian_Anatomy
 def: "A cell of the embryo." [CL:0002321]
 xref: CL:0002321
-is_a: PLANA:0000117 ! embryonic structure
-is_a: PLANA:0000127 ! cell
+is_a: Developing_Anatomical_Structure ! developing anatomical structure
 
 [Term]
 id: PLANA:0000124
@@ -1236,9 +1408,13 @@ namespace: Planarian_Anatomy
 def: "The sensory system subserving the sense of vision." [UBERON:0002104]
 xref: UBERON:0002104
 is_a: PLANA:0000114 ! anatomical system
-is_a: PLANA:0000119 ! terminally differentiated cell
-relationship: develops_from PLANA:0000010 ! neoblast
+relationship: develops_from PLANA:0000010 ! neoblast compartment
 relationship: develops_from PLANA:0000095 ! trail cell
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+relationship: existence_starts_at_point PLANA:0000006 ! Stage 6
 
 [Term]
 id: PLANA:0000125
@@ -1246,16 +1422,6 @@ name: sensory system
 namespace: Planarian_Anatomy
 def: "Anatomical system that overlaps the nervous system and is responsible for receiving and processing sensory information." [UBERON:0001032]
 xref: UBERON:0001032
-is_a: PLANA:0000037 ! definitive tissue
-is_a: PLANA:0000114 ! anatomical system
-
-[Term]
-id: PLANA:0000126
-name: reproductive system
-namespace: Planarian_Anatomy
-def: "Anatomical system that has as its parts the organs concerned with reproduction." [UBERON:0000990]
-xref: UBERON:0000990
-is_a: PLANA:0000037 ! definitive tissue
 is_a: PLANA:0000114 ! anatomical system
 
 [Term]
@@ -1264,7 +1430,7 @@ name: cell
 namespace: Planarian_Anatomy
 def: "A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane." [CL:0000000]
 xref: CL:0000000
-is_a: PLANA:0000129 ! anatomical structure
+is_a: Multicellular_Anatomical_Structure ! multicellular anatomical structure
 
 [Term]
 id: PLANA:0000128
@@ -1280,4 +1446,268 @@ name: anatomical structure
 namespace: Planarian_Anatomy
 def: "Material anatomical entity that is a single connected structure with inherent 3D shape generated by coordinated expression of the organism's own genome." [CARO:0000003]
 xref: CARO:0000003
+is_a: Material_Anatomical_Entity ! material anatomical entity
+
+[Term]
+id: Parapharyngeal_Region
+name: parapharyngeal region
+namespace: Planarian_Anatomy
+def: "Region of the animal lateral to and surrounding the pharyngeal pouch." []
+is_a: Definitive_Organism_Subdivision ! definitive organism subdivision
+
+[Term]
+id: Primordium
+name: primordium
+namespace: Planarian_Anatomy
+def: "Primordia are populations of contiguous cells that are morphologically distinct and already correspond in extent to a later organ/tissue." []
+xref: UBERON:0001048
+is_a: Regenerating_Anatomical_Structure ! regenerating anatomical structure
+
+[Term]
+id: Regenerating_Anatomical_Structure
+name: regenerating anatomical structure
+namespace: Planarian_Anatomy
+def: "An anatomical structure that is undergoing regeneration." []
+xref: UBERON:0007567
+is_a: Material_Anatomical_Entity ! material anatomical entity
+
+[Term]
+id: Tail
+name: tail
+namespace: Planarian_Anatomy
+def: "An external caudal extension of the body. In chordates, the tail is post-anal, in other animals the anus ends in the tail." []
+xref: UBERON:0002415
+is_a: Definitive_Organism_Subdivision ! definitive organism subdivision
+
+[Term]
+id: Tail_Stripe
+name: tail stripe
+namespace: Planarian_Anatomy
+def: "Region just posterior to pharynx and mouth, which sits between the posterior gut branches and contains neoblasts (piwi+). This region is often used for injection of cells for rescue experiments on irradiated animals." []
+is_a: Definitive_Organism_Subdivision ! definitive organism subdivision
+
+[Term]
+id: apical_epidermis_surface
+name: apical epidermis surface
+namespace: Planarian_Anatomy
+def: "The apical surface of the single layered epithelium epidermis that is in contact with the environment." []
+is_a: Anatomical_Surface ! anatomical surface
+
+[Term]
+id: basal_epidermis_surface
+name: basal epidermis surface
+namespace: Planarian_Anatomy
+def: "The basal surface of the epidermial epithelium in contact with the basal lamina." []
+is_a: Anatomical_Surface ! anatomical surface
+
+[Term]
+id: bursa
+name: bursa
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
+
+[Term]
+id: cavity_of_pharynx
+name: cavity of pharynx
+namespace: Planarian_Anatomy
+def: "A anatomical space that is enclosed by a pharynx." []
+xref: UBERON:0001731
+is_a: Anatomical_Space ! anatomical space
+
+[Term]
+id: definitive_pharynx
+name: definitive pharynx
+namespace: Planarian_Anatomy
+def: "A plicate and protrusible organ that is the sole point of entry and exit for the Triclad gut. It contains epithelial, muscular, secretory and neuronal cell types." []
+is_a: organ
+is_a: PLANA:0000050 ! digestive system element
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000110 ! definitive pharynx progenitor cell
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+relationship: has_part PLANA:0000099 ! neuron
+relationship: has_part PLANA:0000100 ! epithelial cell
+relationship: has_part PLANA:0000102 ! pharyngeal muscle
+relationship: has_part PLANA:0000105 ! secretory cell
+
+[Term]
+id: embryonic_digestive_system_element
+name: embryonic digestive system element
+namespace: Planarian_Anatomy
+is_a: PLANA:0000058 ! embryonic digestive system
+
+[Term]
+id: epithelial_cell_component
+is_a: PLANA:0000100 ! epithelial cell
+
+[Term]
+id: genital_atrium
+name: genital atrium
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
+
+[Term]
+id: gonopore
+name: gonopore
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
+
+[Term]
+id: juvenile
+name: juvenile
+namespace: Schmidtea_mediterranea_Developmental_Stages
+def: "A sexually immature member of the Schmidtea mediterranea sexuallly reproducing biotype." []
+is_a: PLANA:0000040 ! Schmidtea mediterranea developmental stage
+
+[Term]
+id: lumen_gut_surface
+name: lumen gut surface
+namespace: Planarian_Anatomy
+def: "The surface of the gut lumen in contact with ingested food." []
+is_a: Anatomical_Surface ! anatomical surface
+
+[Term]
+id: lumen_of_digestive_tract
+name: lumen of digestive tract
+namespace: Planarian_Anatomy
+def: "An anatomical space that is surrounded by a digestive tract." []
+xref: Uberon:0006909
+is_a: Anatomical_Space ! anatomical space
+is_a: PLANA:0000050 ! digestive system element
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000005 ! Stage 5
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+
+[Term]
+id: lumen_pharyngeal_epithelium_surface
+is_a: Anatomical_Surface ! anatomical surface
+
+[Term]
+id: mouth_opening
+name: mouth opening
+namespace: Planarian_Anatomy
+def: "The opening flanked by mouth tissue that delimits the boundary between the environment and the digestive system components." []
+is_a: Anatomical_Space ! anatomical space
+
+[Term]
+id: musculature_system
+is_a: PLANA:0000114 ! anatomical system
+relationship: develops_from PLANA:0000010 ! neoblast compartment
+relationship: develops_from PLANA:0000019 ! muscle progenitor
+relationship: existence_overlaps Adult ! Adult
+relationship: existence_overlaps juvenile ! juvenile
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000007 ! Stage 7
+relationship: existence_overlaps PLANA:0000008 ! Stage 8
+relationship: existence_starts_at_point PLANA:0000005 ! Stage 5
+
+[Term]
+id: organ
+is_a: Multicellular_Anatomical_Structure ! multicellular anatomical structure
+
+[Term]
+id: outer_pharyngeal_epithelium_surface
+is_a: Anatomical_Surface ! anatomical surface
+
+[Term]
+id: ovary
+name: ovary
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
+
+[Term]
+id: oviduct
+name: oviduct
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
+
+[Term]
+id: parapharyngeal_pouch_cavity
+name: parapharnygeal pouch cavity
+namespace: PLANA:0000407
+namespace: Planarian_Anatomy
+def: "The space within the parapharyngeal pouch not occupied by the pharynx proper." []
+is_a: Anatomical_Space ! anatomical space
+
+[Term]
+id: parapharyngeal_pouch_surface
+is_a: Anatomical_Surface ! anatomical surface
+
+[Term]
+id: penis_papilla
+name: penis papilla
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
+
+[Term]
+id: primitive_ectoderm
+name: primtive ectoderm
+namespace: Planarian_Anatomy
+def: "A single cell layer of extraembryonic, post-mitotic ectodermal cells bounding the embryo. The primitive ectoderm forms during Stage 2 and is thought to degenerate as the definitive epidermis forms during Stages 5-7." []
+xref: OCLC:20423827\, OCLC\:464776945\, OCLC\:82522822\, PLANA_REF\:0000001
+is_a: PLANA:0000063 ! extraembryonic structure
+
+[Term]
+id: primitive_ectoderm_cell
+name: primitive ectoderm cell
+namespace: Planarian_Anatomy
+is_a: primitive_ectoderm ! primtive ectoderm
+
+[Term]
+id: reproductive_system
+name: reproductive system
+namespace: Planarian_Anatomy
+def: "Anatomical system that has as its parts the organs concerned with reproduction." []
+xref: UBERON:0000990
+is_a: PLANA:0000114 ! anatomical system
+
+[Term]
+id: reproductive_system_element
+name: reproductive system element
+namespace: Planarian_Anatomy
+def: "Any of the organs or elements that are part of the hermaphroditic reproductive system." []
+is_a: reproductive_system ! reproductive system
+
+[Term]
+id: reproductive_system_structure
+name: reproductive system structure
+namespace: Planarian_Anatomy
+def: "Any anatomical structure that is part of the reproductive system." []
+xref: UBERON:0005156
+is_a: reproductive_system ! reproductive system
+
+[Term]
+id: sperm_duct
+name: sperm duct
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
+
+[Term]
+id: temporary_embryonic_pharynx
+name: temporary embryonic pharynx
+namespace: Planarian_Anatomy
+is_a: PLANA:0000063 ! extraembryonic structure
+relationship: develops_from PLANA:0000032 ! blastomere
+relationship: existence_ends_at_point PLANA:0000006 ! Stage 6
+relationship: existence_overlaps PLANA:0000003 ! Stage 3
+relationship: existence_overlaps PLANA:0000004 ! Stage 4
+relationship: existence_overlaps PLANA:0000005 ! Stage 5
+relationship: existence_overlaps PLANA:0000006 ! Stage 6
+relationship: existence_starts_at_point PLANA:0000002 ! Stage 2
+relationship: has_part PLANA:0000099 ! neuron
+relationship: has_part PLANA:0000100 ! epithelial cell
+relationship: has_part PLANA:0000101 ! muscle cell
+
+[Term]
+id: testis
+name: testis
+namespace: Planarian_Anatomy
+is_a: reproductive_system_element ! reproductive system element
 
